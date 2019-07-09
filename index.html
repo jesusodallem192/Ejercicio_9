@@ -4,23 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css">
     <title>Ejemplo 9</title>
 </head>
 <body>
-    <header>
-        <h1>
-            <a href="./index.html">
-                Bedu Travels
-            </a>
-            
-        </h1>
-        <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>tem 3</li>
-        </ul>
-    </header>
+
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark mb-3">
+                <div class="container">
+                    <a class="navbar-brand" href="./index.html">Bedu Travels</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#items">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="items">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Item 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Item 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Item 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+    </nav>
     <section id="buscador">
         <h2>
             Tours por todo México
@@ -29,43 +42,47 @@
         <input type="text" placeholder="Ingresa tu destino">
         <button>Buscar</button>
     </section>
-    <section id="listado_1">
-        <article>
-            <a href="./cancun.html"><img src="./img/descarga.jpeg" alt="">
-            </a>
+    <div class="card-columns">
+        <div class="card text-center" style="width: 20rem;">
+                <div class="card-body">
+                    <a href="./cancun.html">
+                    <img src="./img/descarga.jpeg" alt="">
+                    <h4 class="card-title text-muted">Cancún</h4>
+                    <h6 class="card-subtitle text-muted">$850 USD</h6>
+                    <p class="card-text text-muted">México</p>
+                    <p class="card-text text-muted">7 días</p>
+                    <a class="btn btn-dark btn-block" href="#">Ver más</a>
+                </div>
+        </div>
+        <div class="card text-center" style="width: 20rem;">
+                <div class="card-body">
+                    <a href="./chiapas.html">
+                    <img src="./img/actividades-principales_chiapas_palenque_explora-las-ruinas-de-palenque_01.jpg" alt="">
+                    <h4 class="card-title text-muted">Chiapas</h4>
+                    <h6 class="card-subtitle text-muted">$850 USD</h6>
+                    <p class="card-text text-muted">México</p>
+                    <p class="card-text text-muted">7 días</p>
+                    <a class="btn btn-dark btn-block" href="#">Ver más</a>
+                </div>
+        </div>
+    </div>
 
-            <a href="./cancun.html">
-                <h3>Cancún</h3>
-            </a>
-                
-                
-                <p>$850 USD</p>
-                <p>México</p>
-                <p>7 días</p>
-
-
-        </article>  
-
-        <article>
-            <a href="./chiapas.html"><img src="./img/actividades-principales_chiapas_palenque_explora-las-ruinas-de-palenque_01.jpg" alt="">
-            </a>
-            <a href="./chiapas.html">
-                <h3>Chiapas</h3>
-            </a>
-                
-                <p>$850 USD</p>
-                <p>México</p>
-                <p>7 días</p>
-        </article>
-    </section>
+    
 
     <footer>
-        <a href="hola@tours.com">hola@tours.com</a>
-        <ul>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>tem 3</li>
+        
+        <ul class="nav nav-pills justify-content-end">
+                <a href="hola@tours.com">hola@tours.com</a>
+                <li class="nav-item">Item 1</li>
+                <li class="nav-item">Item 2</li>
+                <li class="nav-item">tem 3</li>
         </ul>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
 </body>
 </html>

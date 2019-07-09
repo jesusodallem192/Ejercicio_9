@@ -6,14 +6,7 @@ body{
 
 }
 
-header {
-    background-color: rgb(59, 59, 59);
-    color:white;
-    position: fixed;
-    width: 100%;
-    top: 0;
 
-}
 
 header h1 {
     width: 38%;
@@ -69,7 +62,12 @@ section#listado_1 article{
 } 
 
 section#listado_1 article img{
-    width: 350px;
+    width: 100%;
+    
+}
+
+div img {
+    width: 100%;
 }
 
 section#listado_1 article a {
@@ -83,21 +81,3 @@ footer{
     color: white;
 }
 
-footer a {
-    width: 38%;
-    text-decoration: none;
-    color: rgb(209, 209, 209);
-    padding-left: 15px;
-
-}
-
-footer ul {
-    width: 45%;
-    display: inline-block;
-    text-align: right;
-
-}
-
-footer ul li {
-    display: inline-block;
-}
